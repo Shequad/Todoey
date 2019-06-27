@@ -9,10 +9,10 @@
 import Foundation
 
 
-class ChecklistItem {
+class ChecklistItem : Encodable, Decodable {
     
-    var text = ""
-    var checked = false
+    var text : String = ""
+    var checked : Bool = false
     
     init(text : String, checked : Bool) {
         self.text = text
